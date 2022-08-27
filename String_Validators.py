@@ -1,25 +1,51 @@
 
 def validator(s):
+    count = 0;
     for i,v in enumerate(s):
         if v.isalnum():
-            print("True")
-            break
+            count=count+1;
+    if count!=0:
+        print("True")
+    else:print("False")
+
+    count = 0;
     for i,v in enumerate(s):
         if v.isalpha():
-            print("True")
-            break
+            count = count + 1;
+    if count != 0:
+        print("True")
+    else:
+        print("False")
+
+    count = 0;
     for i,v in enumerate(s):
         if v.isdigit():
-            print("True")
+            count = count + 1;
             break
+    if count != 0:
+        print("True")
+    else:
+        print("False")
+
+    count = 0;
     for i,v in enumerate(s):
         if v.islower():
-            print("True")
+            count = count + 1;
             break
+    if count != 0:
+        print("True")
+    else:
+        print("False")
+
+    count = 0;
     for i,v in enumerate(s):
         if v.isupper():
-            print("True")
+            count = count + 1;
             break
+    if count != 0:
+        print("True")
+    else:
+        print("False")
 
 
 if __name__ == '__main__':
